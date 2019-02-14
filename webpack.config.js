@@ -52,12 +52,16 @@ module.exports = {
         }
       },
       {
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader']
+      },
+      {
         test: /\.jsx?$/,
         loader: "babel-loader",
         exclude: /node_modules/,
         options: {
           presets: [
-            ["es2015", {"modules": false}],
+            ["es2015", { "modules": false }],
             "react",
           ],
           plugins: [
@@ -72,8 +76,8 @@ module.exports = {
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NamedModulesPlugin(),
-        new HtmlWebpackPlugin({
-      template:'template.ejs',
+    new HtmlWebpackPlugin({
+      template: 'template.ejs',
       appMountId: 'react-app-root',
       title: 'Programmers',
       filename: resolve(__dirname, "build", "index.html"),

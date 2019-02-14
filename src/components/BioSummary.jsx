@@ -15,19 +15,18 @@ function BioSummary(props) {
     var bioDiv = {
         float: 'left',
         width: '33%',
-        height: '320px',
+        height: '400px',
         overflow: 'hidden'
     };
     return (
         <div style={bioDiv}>
-
+            <hr />
             <div style={bioText}>
                 <Link to={props.link} style={{textDecoration: 'none', color: 'black'}}>
                     <h3>{props.name}</h3>
                     <h4>{props.description}</h4>
                     <h4 >Bio</h4>
                     <img style={bioImg} src={props.image} alt='pic'></img>
-                    <hr />
                 </Link>
             </div>
 

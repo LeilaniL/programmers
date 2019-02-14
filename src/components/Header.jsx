@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 function Header(){
     var style={
         textAlign:'center',
-        fontSize: '30'
+        fontSize: '18'
     };
     var styleh1={
         color:'red',
