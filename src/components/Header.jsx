@@ -1,10 +1,11 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 
 function Header(){
     var style={
         textAlign:'center',
-        fontSize:50
+        fontSize: '30'
     };
     var styleh1={
         color:'red',
@@ -12,8 +13,9 @@ function Header(){
     };
     return (
         <div style={style}> 
-            <h1 style={styleh1}>Our Team</h1>
-            <h4>Each member of our team is a specialist in his or her field. Together, we make sure you’re investing where the best returns are, while building loyalty across every touchpoint.</h4>
+            <h1 style={styleh1}>Famous Programmers and Computer Scientists</h1>
+            <h4>Badass women</h4>
+            <Link to="/">Home</Link>
 
         </div>
     );
